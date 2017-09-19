@@ -6,13 +6,13 @@ This project cloned from: https://github.com/hitokun-s/node-express-multiapp-dem
 
 It is used to achieve "multi app" in node.js with Express.
 
-The directory structure was modified slightly to suit my purposes 
+The directory structure was modified slightly to suit my purposes. 
 
 ### Structure
 
     |  node-express-multiapp
         |
-        +-- app.js (<-- main. sometimes named "server.js")  
+        +-- index.js (<-- The main application)  
     
     |  root  
         |
@@ -26,8 +26,8 @@ The directory structure was modified slightly to suit my purposes
         |   +--- index.js  
         +-- manager.js  
 
-"app1" and "app2" represent independent app(context).  
-In each "index.js", you can code in the same way in "app.js", like this:  
+"app1" and "app2" represent independent apps (contexts).  
+In each "index.js", you can code in the same way in "node-express-multiapp/index.js", like this:
 
     app.get([path to this context], function(req,res){  
         //do something  
