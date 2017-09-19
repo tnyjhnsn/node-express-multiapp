@@ -35,7 +35,7 @@ In each "index.js", you can code in the same way in "app.js", like this:
 
 ### Magic Spells
 
-- in app.js 
+- in "node-express-multiapp/index.js" 
 
         require("../root/manager.js").init(app, express);  
     
