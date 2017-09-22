@@ -14,7 +14,7 @@ The directory structure was modified slightly to suit my purposes.
         |
         +-- index.js (<-- The main application)  
     
-    |  root  
+    |  multiapp-root  
         |
         +-- app1  
         |   +-- img  
@@ -37,7 +37,7 @@ In each "index.js", you can code in the same way in "node-express-multiapp/index
 
 - in "node-express-multiapp/index.js" 
 
-        require("../root/manager.js").init(app, express);  
+        require("../multiapp-root/manager.js").init(app, express);  
     
 - in "index.js" of each context(ex. "app1","app2")  
 
